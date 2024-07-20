@@ -1,187 +1,112 @@
-# Phase 1 Project Guidelines
+git# Phase-1 Project
 
-## Learning Goals
+This is my Phase 1 project.
 
-- Design and architect features across a frontend
-- Communicate and collaborate in a technical environment
-- Integrate JavaScript and an external API
-- Debug issues in small- to medium-sized projects
-- Build and iterate on a project MVP
+# By
 
-## Introduction
+This project is the sole brainchild and property of Ian Dan Cheruiyot.
 
-Welcome to JavaScript Project Mode!
+# King Arthur Pet Adoption
 
-You’ve worked so hard to get here and have learned a ton. Now it's time to bring
-it all together!
+Welcome to the King Arthur Pet Adoption project! This is a simple web application designed to showcase pets available for adoption and the veterinarians associated with our center. Users can view information about pets and vets, and submit an adoption form.
 
-For this project, you're going build a Single Page Application (**SPA**).
-Building this application will be challenging because it will integrate
-everything you've learned up to this point. Your frontend will be built with
-HTML, CSS, and JavaScript and will communicate with a public API.
+## Project Structure
 
-### Project Requirements
+- **king.html**: The main HTML file that structures the website.
+- **king.css**: The stylesheet for styling the website.
+- **king.js**: The JavaScript file that handles dynamic content and interactions.
+- **db.json**: The JSON file containing data about pets and veterinarians.
 
-1. Your app must be a HTML/CSS/JS frontend that accesses data from a public API or
-   from a db.json file using json-server. Your API or db.json should return a 
-   collection of at least 5 objects with each object having at least 3 attributes. 
-   All interactions between the client and the API should be handled
-   asynchronously and use JSON as the communication format. Try to avoid using
-   an API that requires a key. APIs that are free and require no authorization
-   will be easiest to use. For ideas, see this [list of no-auth APIs][APIs]. If
-   you would like to use an API that requires a key, please consult with your
-   instructor on how to protect that key. **NEVER push your API key to github!**
+## Features
 
-2. Your entire app must run on a single page. There should be NO redirects or
-    reloads. In other words, your project will contain a single HTML file.
+- **Home Page**: Displays navigation to different sections of the site.
+- **About Us**: Provides information about the pet adoption center.
+- **Pets**: Lists pets available for adoption with their details and images. Each pet has a remove button "Adopted" for admin purposes.
+- **Vets**: Lists veterinarians with their specialties and images.
+- **Contact Us**: Provides contact information for various inquiries.
+- **Adopt a Pet**: A form for users to express interest in adopting a pet.
 
-3. Use at least 3 distinct [event listeners][event-listeners] (3 events of different
-   types) that enable interactivity. What this means is that, if you had 3 click
-   events, that would only count as 1 distinct event and you would need to add at
-   least 2 more. Think search or filter functionality, toggling dark/light mode,
-   upvoting posts, etc. Each of your event listeners should also have its own unique 
-   callback function. These must be added using JavaScript's .addEventListener()
-   method. Events embedded into HTML elements and CSS will not count toward the 
-   total. Please ask your instructor if you have questions regarding this requirement.
+## Setup/Installation Requirements
 
-4. Your project must implement at least one instance of array iteration using
-   available array methods (`map`, `forEach`, `filter`, etc). Manipulating your
-   API data in some way should present an opportunity to implement your array
-   iteration.
+* One would need either linux or wsl for window users
+* A copy of visual basic code installed
+* A github account
 
-5. Follow good coding practices. Keep your code DRY (Do not repeat yourself) by
-   utilizing functions to abstract repetitive code.
+1. Open your terminal and go to the directory you wish to work from.
+2. Go to the following url using ur github account https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
+3. Go to the code tab and clone the ssh key
+4. Go back to the termina and type git clone <-followed by the ssh key you copied /cloned ->
+5. Enter your new cloned repository and type in code .
+6. On the visual studio code that has now opened, go to the the run tab and hit start debugging.
 
-### Stretch Goals
+## Technologies Used
 
-1. Use [json-server][] in your project to persist your app's interactivity.
+This program is built purely with javascript using the visual code environment.
+It also has db.json file which contains the data we are going to use.
 
-## Strategy, Timeline, and Tips
+## Usage
 
-### Planning
+1. **View Pets**: Check the "Pets" section to see all available pets for adoption, along with their images.
+2. **View Vets**: In the "Vets" section, view the list of veterinarians and their specialties.
+3. **Adopt a Pet**: Fill out the adoption form to express interest in a pet.
+4. **Remove Pets**: Admin users can remove adopted pets from the list by clicking the "Adopted" button next to each pet.
 
-- Plan out your features
-- Develop user stories
-  - “As [ a user ], I want [ to perform this action ] so that
-    [ I can accomplish this goal ].”
-  - Features should not need you there to explain them to users
-- Plan out the structure of your JSON requests
+## Data Structure
 
-### Project Pitches
-
-Before you start working on your project, you'll pitch your project idea to your
-instructors for approval and feedback.
-
-For your project pitch, you should include:
-
-- The basic story of your application
-- The core features of your MVP
-- The API data you'll be using and how you'll use it
-- Challenges you expect to face
-- How you are meeting the requirements of the project
-
-Feel free to send this pitch to your instructor via slack asynchronously.
-
-### MVP ASAP
-
-- Build a Minimum Viable Product (MVP) as quickly as possible.
-  - Pick an API and explore it early on to ensure it will work for your need
-
-### Instructor Guidance
-
-You should strive to solve problems independently, but you also shouldn't waste
-your time stuck on a problem. A good guideline for a small bug is the rule of
-10s:
-
-- 10 minutes debugging the code
-- 10 minutes using Google and StackOverflow to try to find an answer
-- 10 minutes asking your fellow students for help
-- Asking an instructor
-
-If you seek out instructor guidance on your design from the start, they might
-help steer you into design and architectural decisions that will help you down
-the road. That will also give the instructors context for what your app is
-supposed to do, so you won't need to explain everything to them when asking for
-help debugging.
-
-### Guidelines for Staying Organized
-
-**Write down** the decisions you make about your project. This will not only
-help you think more clearly, it will also help you communicate your project to
-instructors when asking for help. In addition to writing everything down, we
-also recommend the following to help stay organized and on track:
-
-- Describe/sketch your ideas (use diagrams!).
-- Start by creating a frontend directory with the basic files you'll need
-- Next, build enough code to get some API data to work with. Don't worry about
-  building all of your async code yet, just get to the point where you can
-  access one endpoint on an API, then start working on getting that data
-  displayed.
-- Then, continue to build additional async code and frontend features.
-- Continue building features one by one.
-
-Check in with your instructors to make sure your scope and timeline are
-manageable.
-
-### JSON Server Instructions
-
-> **Note**: Using `json-server` is a stretch goal, so make sure you have a
-> working MVP before trying to set up `json-server`!
-
-You can use this [json-server template][] to generate your backend code. Using
-this template will make it easier to deploy your backend later on.
-
-[json-server template]: https://github.com/learn-co-curriculum/json-server-template
-
-If you prefer, instead of using the template, you can create a `db.json` file
-with a structure in the root of your project that looks like this:
+The data is stored in `db.json` with the following structure:
 
 ```json
 {
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
+    "Pets": [
+        {
+            "id": 1,
+            "name": "Rico",
+            "species": "Dog",
+            "age": 6,
+            "description": "Rico is a friendly 6-year-old dog who loves walks and cuddles. He's a playful companion with a gentle nature.",
+            "imageUrl": "https://i.pinimg.com/564x/24/bc/1b/24bc1b4f7fe377849b845c3182f47b4c.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Alfred",
+            "species": "Cat",
+            "age": 1,
+            "description": "Alfred is a curious 1-year-old kitten with a playful personality. He enjoys exploring and is affectionate and charming.",
+            "imageUrl": "https://i.pinimg.com/564x/76/99/57/769957b346d27e8c0f053749edc2c26b.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Captain",
+            "species": "Bird",
+            "age": 2,
+            "description": "Captain is a vibrant 2-year-old bird with colorful feathers. He loves to sing and interact, bringing cheer to your home.",
+            "imageUrl": "https://i.pinimg.com/736x/89/ab/07/89ab0719a352b177b2f1d23792173ca6.jpg"
+        }
+    ],
+    "Vets": [
+        {
+            "id": 4,
+            "name": "Dr.Bule",
+            "speciality": "Surgeon",
+            "imageUrl": "https://i.pinimg.com/736x/de/7e/51/de7e51911beef7c297e1c1372ec7fab1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Dr.Spot",
+            "speciality": "Feline Specialist",
+            "imageUrl": "https://i.pinimg.com/736x/41/d7/78/41d778d48fc6e2d53011dbfaef67f971.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Dr.Sal",
+            "speciality": "Canine Specialist",
+            "imageUrl": "https://i.pinimg.com/564x/7f/b8/7b/7fb87b373cb67abc23018136d0c424b4.jpg"
+        },
+        {
+            "id": 7,
+            "name":"Dr.Bella",
+            "speciality": "Avian Veterinarian",
+            "imageUrl": "https://i.pinimg.com/564x/05/71/7b/05717b5f6fd35234e43ee7cb3c7f8c95.jpg"
+        }
+    ]
 }
-```
-
-Then, assuming you have `json-server` installed globally, you can run this
-command to run the server:
-
-```console
-$ json-server --watch db.json
-```
-
-Whatever top-level keys exist in your `db.json` file will determine the routes
-available. In the example above, since we have a key of `toys` pointing to an
-array of toy objects, `json-server` will generate the following routes:
-
-- `GET /toys`
-- `POST /toys`
-- `GET /toys/:id`
-- `PATCH /toys/:id`
-- `DELETE /toys/:id`
-
-You can consult the [json-server docs][] for more information.
-
-[json-server docs]: https://www.npmjs.com/package/json-server
-
-## Resources
-
-- [Public APIs](https://github.com/public-apis/public-apis)
-- [Fun APIs](https://apilist.fun/)
-- [json-server][]
-
-[json-server]: https://www.npmjs.com/package/json-server
-[event-listeners]: https://developer.mozilla.org/en-US/docs/Web/Events
-[APIs]:  https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/

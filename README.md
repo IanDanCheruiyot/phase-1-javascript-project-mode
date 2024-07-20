@@ -1,4 +1,4 @@
-git# Phase-1 Project
+# Phase-1 Project
 
 This is my Phase 1 project.
 
@@ -33,7 +33,7 @@ Welcome to the King Arthur Pet Adoption project! This is a simple web applicatio
 * A github account
 
 1. Open your terminal and go to the directory you wish to work from.
-2. Go to the following url using ur github account https://github.com/learn-co-curriculum/phase-1-javascript-project-mode
+2. Go to the following url using ur github account https://github.com/IanDanCheruiyot/phase-1-javascript-project-mode.git
 3. Go to the code tab and clone the ssh key
 4. Go back to the termina and type git clone <-followed by the ssh key you copied /cloned ->
 5. Enter your new cloned repository and type in code .

@@ -1,0 +1,51 @@
+{
+    "Pets": [
+        {
+            "id": 1,
+            "name": "Rico",
+            "species": "Dog",
+            "age": 6,
+            "imageUrl": "https://i.pinimg.com/564x/24/bc/1b/24bc1b4f7fe377849b845c3182f47b4c.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Alfred",
+            "species": "Cat",
+            "age": 1,
+            "imageUrl": "https://i.pinimg.com/564x/76/99/57/769957b346d27e8c0f053749edc2c26b.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Captain",
+            "species": "Bird",
+            "age": 2,
+            "imageUrl": "https://i.pinimg.com/736x/89/ab/07/89ab0719a352b177b2f1d23792173ca6.jpg"
+        }
+    ],
+    "Vets": [
+        {
+            "id": 4,
+            "name": "Dr.Bule",
+            "speciality": "Surgeon",
+            "imageUrl": "https://i.pinimg.com/736x/de/7e/51/de7e51911beef7c297e1c1372ec7fab1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Dr.Spot",
+            "speciality": "Feline Specialist",
+            "imageUrl": "https://i.pinimg.com/736x/41/d7/78/41d778d48fc6e2d53011dbfaef67f971.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Dr.Sal",
+            "speciality": "Canine Specialist",
+            "imageUrl": "https://i.pinimg.com/564x/7f/b8/7b/7fb87b373cb67abc23018136d0c424b4.jpg"
+        },
+        {
+            "id": 7,
+            "name":"Dr.Bella",
+            "speciality": "Avian Veterinarian",
+            "imageUrl": "https://i.pinimg.com/564x/05/71/7b/05717b5f6fd35234e43ee7cb3c7f8c95.jpg"
+        }
+    ]
+}

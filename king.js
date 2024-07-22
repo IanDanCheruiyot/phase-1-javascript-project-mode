@@ -2,18 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch the data from the JSON file
     fetchDataAndLoadContent();
 
-    // Event listener to submit the adoption form
+    // Event to submit the adoption form
     document.querySelector('#Adoption-form').addEventListener('submit', (event) => {
         event.preventDefault();
         alert('Thank you! We Shall Contact You Soon');
     });
 
-    // Event listener for the refresh button
+    
     document.querySelector('#refresh-button').addEventListener('click', () => {
         fetchDataAndLoadContent();
     });
 
-    // Function to fetch data and load content
+    // Function fetch data and load content
     function fetchDataAndLoadContent() {
         fetch('db.json')
             .then(response => response.json())
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Function to load pets and vets
+    // Function load pets and vets
     function loadPetsAndVets(data) {
         const petsContainer = document.getElementById('pets-container');
         const vetsContainer = document.getElementById('vets-container');
 
-        petsContainer.innerHTML = ''; // Clear existing pets
-        vetsContainer.innerHTML = ''; // Clear existing vets
+        petsContainer.innerHTML = '';
+        vetsContainer.innerHTML = '';
 
         data.Pets.forEach((pet, index) => {
             const petDiv = document.createElement('div');
